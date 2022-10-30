@@ -1,0 +1,19 @@
+#ID_1 {
+  color: #0000ff;
+  font-size: 36px;
+}
+
+#ID_2 {
+  font-size: 24px;
+  font-weight: bold;
+  background: #00ff00be;
+}
+
+.class {
+  background: rgba(255, 192, 203, 0.87);
+  font-family: "Verdana", "DejaVu Sans", sans-serif;
+}
+
+.cooler {
+  font-size: 24px;
+}

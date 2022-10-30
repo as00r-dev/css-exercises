@@ -1,0 +1,13 @@
+.btn {
+  font-size: 28px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.primary {
+  background: black;
+  color: white;
+}
+
+.secondary {
+  background: yellow;
+}
