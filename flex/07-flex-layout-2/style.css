@@ -30,16 +30,44 @@ body {
 
 .sidebar {
   width: 300px;
+  padding: 32px;
   background: royalblue;
+  flex-shrink: 0;
+}
+
+.mid {
+  flex: 1;
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 32px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
+  padding: 16px 18px;
+  width: 300px;
 }
 
-.mid {
-  flex: 1;
-  display: flex;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
 }
