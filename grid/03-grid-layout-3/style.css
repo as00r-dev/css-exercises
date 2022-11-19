@@ -1,91 +1,129 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .container {
-  text-align: center;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	gap: 4px;
 }
 
 .container div {
-  padding: 15px;
-  font-size: 32px;
-  font-family: Helvetica;
-  font-weight: bold;
-  color: white;
+	padding: 15px;
+	font-size: 32px;
+	font-family: Helvetica;
+	font-weight: bold;
+	color: white;
 }
 
 .header {
-  background-color: #393f4d;
+	background-color: #393f4d;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-area: 1 / 1 / 2 / 3;
+}
+
+.header .logo {
+	text-align: left;
+}
+
+.menu ul {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 16px;
 }
 
 .menu ul,
 .menu li {
-  font-size: 16px;
+	font-size: 16px;
+	list-style-type: none;
 }
 
 .sidebar {
-  background-color: #FF7755;
+	background-color: #ff7755;
+	grid-area: 2 / 1 / 4 / 2;
+	display: grid;
+	gap: 50px;
+}
+
+.sidebar div {
+	display: grid;
+	place-items: center;
 }
 
 .sidebar .photo {
-  background-color: white;
-  color: black;
-  font-size: 12px;
-  font-weight: normal;
-  border-radius: 10px;
+	background-color: white;
+	color: black;
+	font-size: 12px;
+	font-weight: normal;
+	border-radius: 10px;
 }
 
-
 .sidebar .side-content {
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  font-weight: normal;
+	background-color: white;
+	color: black;
+	font-size: 16px;
+	font-weight: normal;
 }
 
 .nav {
-  background-color: #FF7755;
+	background-color: #ff7755;
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.nav ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	list-style-type: none;
 }
 
 .nav ul li {
-  font-size: 16px;
-  text-transform: uppercase;
+	font-size: 16px;
+	text-transform: uppercase;
 }
 
 .article {
-  background-color: #bccbde;
+	background-color: #bccbde;
+	grid-area: 3 / 2 / 4 / 3;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	gap: 15px;
 }
 
 .article p {
-  font-size: 18px;
-  font-family: sans-serif;
-  color: white;
-  text-align: left;
+	font-size: 18px;
+	font-family: sans-serif;
+	color: white;
+	text-align: left;
 }
 
 .article .card {
-  background-color: #FFFFFF;
-  color: black;
-  text-align: center;
+	background-color: #ffffff;
+	color: black;
+	text-align: center;
 }
 
 .card p {
-  color: black;
-  font-weight: normal;
-  font-size: 14px;
+	color: black;
+	font-weight: normal;
+	font-size: 14px;
 }
 
 .card .title {
-  font-size: 18px;
-  text-align: center;
+	font-size: 18px;
+	text-align: center;
 }
 
 .footer {
-  background-color: #393f4d;
+	background-color: #393f4d;
+	grid-area: 4 / 1 / 5 / 3;
 }
 
 .footer p {
-  font-size: 13px;
-  font-weight: normal;  
+	font-size: 13px;
+	font-weight: normal;
 }
